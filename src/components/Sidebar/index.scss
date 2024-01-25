@@ -1,0 +1,106 @@
+@import '../../App.scss';
+
+.nav-bar {
+    background: $front;
+    width: 80px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    min-height: 500px;
+
+    nav {
+        display: block;
+        text-align: center;
+        position: absolute;
+        height: 210px;
+        top: 50%;
+        margin-top: -120px;
+        width: 100%;
+
+        a {
+            font-size: 22px;
+            display: block;
+            line-height: 51px;
+            height: 51px;
+            position: relative;
+            text-decoration: none;
+
+            .icon {
+                color: $base;
+            }
+
+            &:hover {
+                background: $contrast;
+                svg {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+}
+
+.hamburger-icon, .close-icon {
+    display: none;
+}
+  
+  
+@media screen and (max-width: 1200px) {
+    .nav-bar { 
+        background: transparent;
+        position: initial;
+        height: auto;
+        min-height: auto;
+
+        ul, nav {
+            display: none;
+        }
+
+        nav {
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: #181818;
+            height: 100%;
+            margin: 0;
+            z-index: 2;
+            position: fixed;
+
+            &.mobile-show {
+                display: block;
+            }
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            a:after {
+                opacity: 1;
+                position: initial;
+                width: auto;
+                margin-left: 10PX;
+            }
+
+            a svg {
+                opacity: 1 !important;
+            }
+        }
+
+        .hamburger-icon{
+            position: absolute;
+            top: 35px;
+            right: 15px;
+            display: block;
+        }
+
+        .close-icon {
+            display: block;
+            position: relative;
+            width: 100%;
+            top: 35px;
+        }
+    }
+}

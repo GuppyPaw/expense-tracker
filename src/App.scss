@@ -1,0 +1,20 @@
+$text: #000;
+$base: #7a90af;
+$contrast: #F03A47;
+$front: #23395B;
+$back: #fff;
+
+$balance: #44AF69;
+$exp-red: #F03A47;
+$exp-yellow: #FFFD76;
+
+
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+}
+
+input,
+textarea{
+  font-family: 'Open Sans';
+}
