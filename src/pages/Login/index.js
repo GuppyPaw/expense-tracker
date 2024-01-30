@@ -23,7 +23,7 @@ const Layout = () => {
     useEffect(() => {
       authToken()
       //getAllMovements()
-  },[]);
+  },);
 
   const authToken = () => {
       if(getToken()) navigate('/expenses/wallet');

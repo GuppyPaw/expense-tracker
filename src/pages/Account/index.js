@@ -5,7 +5,7 @@ import { Logout } from '../../server/Login';
 import { getToken, getUser, deleteSession } from '../../server/Auth';
 import { faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 const Account = () => {
 
@@ -13,7 +13,7 @@ const Account = () => {
     
     useEffect(() => {
         authToken()
-    },[]);
+    },);
 
     const authToken = () => {
         if(!getToken()) navigate('/expenses/login');

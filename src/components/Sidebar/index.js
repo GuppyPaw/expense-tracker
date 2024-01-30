@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChartColumn, faWallet, faBars, faClose, faRightFromBracket, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faChartColumn, faWallet, faBars, faClose, faUser } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
 import './index.scss'
 

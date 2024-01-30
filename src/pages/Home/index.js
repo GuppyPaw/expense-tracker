@@ -24,7 +24,7 @@ const Home = props => {
     useEffect(() => {
         authToken()
         getInfo()
-    },[]);
+    },);
 
     const getInfo = () => {
         getCategoryInfo()
