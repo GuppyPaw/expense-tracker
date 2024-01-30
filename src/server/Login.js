@@ -13,23 +13,18 @@ export const Login =  (body) => {
     })
 };
 
-export const logout = () => {
-    try {
+export const Logout = (token) => {
+    return new Promise((resolve, reject) => {
         fetch('http://localhost:5000/logout', {
             method: 'GET',
             headers: {
-                'Authorization': `Bearer ${localStorage.getItem('token')}`,
+                'Authorization': `Bearer ${token}`,
             },
-        }).then(response => {
-            if (response.ok) {
-                console.log('Logout exitoso');
-            } else {
-                console.error('Error en el logout:', response.json());
-            }
-        });
-    } catch (error) {
-        console.error('Error en la solicitud de logout:', error);
-    }
+        })
+        .then(response => response.json())
+        .then(result => resolve(result))
+        .catch(error => reject(error))
+    })
 };
 
 export const Register =  (body) => {

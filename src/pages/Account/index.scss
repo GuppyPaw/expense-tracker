@@ -1,6 +1,6 @@
 @import '../../App.scss';
 
-.home-page{
+.account-page{
     .text-zone{
         position: absolute;
         left: 160px;
@@ -29,32 +29,32 @@
         background: lightgray;
         top: 8%;
 
-        svg {
-            font-size: 25px;
-        }
-
-        .total {
+        .user-info {
+            font-size: 30px;
             display: flex;
             align-items: center;
-            justify-content: center;
-            min-height: 32%;
-            width: 100%;
-            font-size: 100px;
+            flex-direction: column;
+
+            .name {
+                font-size: 60px;
+                font-weight: 900;
+                color: $contrast;
+            }
         }
+    
+        .logout-btn {
+            font-size: 50px;
+            width: 200px;
 
-        .category-box{
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            min-height: 32%;
-            width: 100%;
+            .icon {
+                color: $base;
+            }
 
-            .title {
-                height: 10%;
-                font-size: 30px;
-                font-weight: 700;
-                margin-left: 15px;
-                margin-bottom: 15px;
+            &:hover {
+                background: $contrast;
+                svg {
+                    color: #fff;
+                }
             }
         }
     }

@@ -1,20 +1,28 @@
-import { faCartShopping } from "@fortawesome/free-solid-svg-icons"
+import { faGamepad, faUtensils, faCarSide, faQuestion, faBriefcase, faRightLeft } from "@fortawesome/free-solid-svg-icons"
 
-export const categories = [
+export const categoryIcons = [
     {
-        name: 'Shopping',
-        logo: faCartShopping
+        name: 'Games',
+        logo: faGamepad
     },
     {
         name: 'Food',
-        logo: faCartShopping
+        logo: faUtensils
     },
     {
         name: 'Transport',
-        logo: faCartShopping
+        logo: faCarSide
     },
     {
-        name: 'Ohter',
-        logo: faCartShopping
+        name: 'Other',
+        logo: faQuestion
+    },
+    {
+        name: 'Job',
+        logo: faBriefcase
+    },
+    {
+        name: 'Transfer',
+        logo: faRightLeft
     },
 ]
